@@ -1,0 +1,40 @@
+<!--Cadastrar-->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./static/estilo.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Envie sua mensagem</h1>
+        <p id="subtitulo">Preencha as informações.</p>
+        </br>
+    </div>
+
+    <form action="http://localhost:3000/email" method="POST">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="destinatario"><strong>Destinatário:</strong></label>
+                <input type="text" name="titulo" id="titulo" placeholder="Digite o destinatário." required>
+            </div>
+            <div class="campo">
+                <label for="titulo"><strong>Titulo:</strong></label>
+                <input type="text" name="titulo" id="titulo" placeholder="Digite o título do e-mail." required>
+            </div>
+        </fieldset>
+            <div class="campo">
+                <label for="mensagem"><strong>Mensagem: </strong></label>
+                <textarea id="mensagem" name="mensagem" class="mensagem" placeholder="Digite sua mensagem."></textarea>
+            <button class="botaoEnviar" type="submit" onsubmit="">Enviar</button>
+        <button class="botaoSair" onsubmit="">Sair</button>
+            </div>
+        
+    </form>
+    <script src="./static/index.js"></script>
+</body>
+</html>

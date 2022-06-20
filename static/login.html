@@ -1,0 +1,34 @@
+<!--Login-->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./estilo.css" media="screen">
+    <title>Login</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Login de usuário</h1>
+        <p id="subtitulo">Insira o usuário e a senha.</p>
+        </br>
+    </div>
+
+    <form action="http://localhost:3000/login" method="GET">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="usuario"><strong>Usuário: </strong></label>
+                <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuário." required>
+            </div>
+            <div class="campo">
+                <label for="senha"><strong>Senha: </strong></label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha." required>
+            </div>
+        </fieldset>
+        <a href="./static/email.html"></a><button class="botaoLogin" type="submit" onsubmit="">Entrar</button></a>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

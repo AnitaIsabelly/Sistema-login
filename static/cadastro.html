@@ -1,0 +1,44 @@
+<!--Cadastrar-->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./static/estilo.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de usuário</h1>
+        <p id="subtitulo">Complete suas informações.</p>
+        </br>
+    </div>
+
+    <form id="formCadastro" action="http://localhost:3000/cadastro" method="GET">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome: </strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome." data-required data-min-length="3" data-max-length="16" required>
+            </div>
+            <div class="campo">
+                <label for="usuario"><strong>Usuário: </strong></label>
+                <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuario." required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email: </strong></label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail." data-email-validate data-min-length="2" required>
+            </br>
+            <label for="senha"><strong>Senha: </strong></label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha." data-password-validate data-required required>
+        </div>
+        <button class="botaoCadastro" id="botaoCadastro" type="submit" value="Cadastrar">
+    </form>
+    <a href="./static/login.html"><button class="botaoIrLogin">Logar</button></a>
+    <p class="error-validation template"></p>
+    <script src="./static/script.js"></script>
+</body>
+</html>
